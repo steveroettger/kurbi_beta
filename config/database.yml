@@ -1,10 +1,10 @@
 development:       
   adapter: mysql2
   pool: 5
-  host: mysql2://30b500b6729894:1553ebd7@us-mm-auto-dca-01.cleardb.com/heroku_05b119fcb4f8890
-  username: 096b1965fdad8d
-  password: 9490f6f1
-  database: heroku_c72f98b8c75497b
+  host: 127.0.0.1
+  username: root
+  password: 
+  database: Kurbi
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
