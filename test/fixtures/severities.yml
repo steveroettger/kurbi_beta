@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rank: 1
+  patient_id: 1
+  symptom_id: 1
+  date: 2012-02-11
+
+two:
+  rank: 1
+  patient_id: 1
+  symptom_id: 1
+  date: 2012-02-11
