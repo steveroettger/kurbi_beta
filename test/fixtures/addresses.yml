@@ -5,7 +5,11 @@ one:
   line2: MyString
   line3: MyString
   city: MyString
+<<<<<<< HEAD
   state-province: MyString
+=======
+  state_province: MyString
+>>>>>>> 27b51923898eca639cff13e62b7b77e632aa631a
   zip-postal: MyString
 
 two:
@@ -13,5 +17,9 @@ two:
   line2: MyString
   line3: MyString
   city: MyString
+<<<<<<< HEAD
   state-province: MyString
+=======
+  state_province: MyString
+>>>>>>> 27b51923898eca639cff13e62b7b77e632aa631a
   zip-postal: MyString
