@@ -6,11 +6,15 @@ KurbiBeta::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
 
-  root :to => 'pages#home'
-  match '/contact', :to => 'pages#contact'
-  match '/about',   :to => 'pages#about' 
+  root :to => 'pages#index'
   
-  match '/profile', :to => 'profiles#show'
+  match '/public/home/:page', :to => 'pages#index'
+  
+  resources :members do
+    resources :journal, :history
+  end
+  
+  
   
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
