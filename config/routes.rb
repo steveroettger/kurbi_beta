@@ -10,6 +10,12 @@ KurbiBeta::Application.routes.draw do
   
   match '/public/home/:page', :to => 'pages#index'
   
+  match '/public/about', :to => 'pages#about', :as => 'about'
+  match '/public/home', :to => 'pages#home', :as => 'home'
+  match '/public/contact', :to => 'pages#contact', :as => 'contact'
+  
+  match '/public/:page', :to => 'pages#index'
+  
   resources :members do
     resources :journal, :history
   end
