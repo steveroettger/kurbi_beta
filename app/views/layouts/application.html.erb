@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>KurbiBeta2222</title>
+  <title><%= title %></title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div id="wrap">
+		<%= render 'layouts/header' %>
+		<div id="main">
+			<%= yield %>
+		</div><!--#main-->
+	</div><!--#wrap-->
+	<%= render 'layouts/footer' %>
 </body>
 </html>
