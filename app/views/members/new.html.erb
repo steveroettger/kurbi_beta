@@ -1,4 +1,7 @@
 <!--This is the new user's sign up form page-->
+<%= render 'shared/home_sidenav' %>
+
+<section id="main-profile" class="mid-shadow">
 <h2>Sign up</h2>
 
 <%= form_for(@member) do |f| %>
@@ -8,4 +11,5 @@
 	</div>
 <% end %>
 
-<p>Already a user? </p>
+<p>Already a user? <a href='#'>Sign in</a></p>
+</section><!--#main-profile-->
