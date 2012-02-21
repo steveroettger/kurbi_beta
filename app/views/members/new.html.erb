@@ -1,0 +1,11 @@
+<!--This is the new user's sign up form page-->
+<h2>Sign up</h2>
+
+<%= form_for(@member) do |f| %>
+	<%= render 'form_new', :f => f %>		
+	<div class="actions">
+		<%= f.submit "Sign up", :class => "button round" %>
+	</div>
+<% end %>
+
+<p>Already a user? </p>

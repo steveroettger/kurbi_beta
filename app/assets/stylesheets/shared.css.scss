@@ -30,11 +30,9 @@
 		text-decoration: none;
 		text-align: center;
 		color: #fff;
+		&:hover { background: url(../images/main-bkgd.png) repeat; }
+		&:active { background: url(../images/main-bkgd.png) repeat; }
 	}
-	
-	a:hover, a:active {
-		background: url(../images/main-bkgd.png) repeat;
-	}	
 }
 
 ul.side-nav-style { background: url(../images/bkgd-btn.gif) repeat;}

@@ -1,8 +1,24 @@
 class MembersController < ApplicationController
 	def show
+		@member = Member.find(params[:id])
 		@title = "Profile"
 	end
-
+	
+	def new 
+		@member = Member.new
+		@title = "Sign up"
+	end
+	
+	def create
+		@member = Member.new(params[:member])
+		if @member.save
+			redirect_to @member, :notice => "Welcome to Kurbi!"
+		else
+			render "new"
+		end
+	end
+	
+	
 end
 
 #Actions
