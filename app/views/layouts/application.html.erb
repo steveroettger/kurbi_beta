@@ -10,6 +10,9 @@
 	<div id="wrap">
 		<%= render 'layouts/header' %>
 		<div id="main">
+			<% flash.each do |key, value| %>
+			<div class="flash <%= key %>"><%= value %></div>
+			<% end %>
 			<%= yield %>
 		</div><!--#main-->
 	</div><!--#wrap-->

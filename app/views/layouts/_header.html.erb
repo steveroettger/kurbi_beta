@@ -2,6 +2,12 @@
 	<%= link_to logo, root_path %>
 	
 	<nav>
-		<%= link_to signin_btn, '#' %>
+		<% if current_member %>
+		    Logged in as <%= current_member.email %>.
+		    <%= link_to signout_btn, signout_path %>
+		  <% else %>
+		    <%= link_to signin_btn, signin_path %>
+		  <% end %>
+		
 	</nav>
 </header>

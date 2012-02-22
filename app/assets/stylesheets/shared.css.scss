@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/*-----------------SHARED-------------------*/
+/*-----------------SIDEBARS-------------------*/
 #main-sidebar {
 	position:relative;
 	float: left;
@@ -37,3 +37,78 @@
 
 ul.side-nav-style { background: url(../images/bkgd-btn.gif) repeat;}
 ul.side-nav-style li { border-bottom: 5px solid #fff; }
+
+/*-----------------FORM FOR-------------------*/
+.field {
+	margin-top: 10px;
+	font-size: 16px;
+	color: #333;
+	
+	input {
+		width: 200px;
+		height: 30px;
+		padding-left: 5px;	
+		font-family: Museo;
+		border:  1px solid #2D445B;
+	}
+}
+
+.actions .button {
+	margin-top: 10px;
+	padding:10px 20px 10px 20px;
+	font-family: Museo;
+	font-size: 14px;
+	color: #fff;		
+	background: url(../images/bkgd-btn.gif) repeat;
+	border: none;
+}
+
+.actions .button:hover {
+	background: url(../images/bkgd-btn-hover.gif) repeat;
+	text-decoration: underline;
+}
+
+
+/*---------------ERROR MESSAGES--------------*/
+.field_with_errors {
+  margin-top: 10px;
+  padding: 5px;
+  background: #2D445B;
+  display: table;
+
+	label {
+  		color: #fff;
+	}
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid #2D445B;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+
+  h2 {
+	  text-align: left;
+	  font-weight: bold;
+	  padding: 5px 5px 5px 15px;
+	  font-size: 12px;
+	  margin: -7px;
+	  background-color: #2D445B;
+	  color: #fff;
+  }
+
+  p {
+	  color: #2D445B;
+	  margin:10px 0 0 -5px; 
+  }
+
+  ul li {
+  	font-size: 12px;
+  	list-style: square;
+  	margin-left: 40px;
+  	color: #2D445B;
+	}
+}
