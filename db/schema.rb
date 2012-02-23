@@ -96,9 +96,6 @@ ActiveRecord::Schema.define(:version => 20120221190054) do
 
   create_table "patients", :force => true do |t|
     t.integer  "person_id"
-    t.string   "email"
-    t.string   "password_hash"
-    t.string   "password_salt"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -110,6 +107,8 @@ ActiveRecord::Schema.define(:version => 20120221190054) do
     t.date     "birthday"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "email"
+    t.string   "password"
   end
 
   create_table "predefined_symptoms", :force => true do |t|
