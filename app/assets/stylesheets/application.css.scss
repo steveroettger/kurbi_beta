@@ -43,12 +43,8 @@ p {
 /*------------------LINKS-------------------*/
 a {
 	text-decoration: none;
+	&:hover { text-decoration: underline; }
 }
-
-a:hover {
-	text-decoration: underline;
-}
-
 
 /*-----------------HEADER------------------*/
 header {
@@ -100,12 +96,9 @@ footer {
 		
 		a, a:visited {
 			color: #aaa;
+			&:hover { color: #5994C8; }
+			&:active { color: #5994C8; }
 		}
-		
-		a:hover, a:active {
-			 color: #5994C8;
-		}
-		
 	}
 	
 	#sm-icons {

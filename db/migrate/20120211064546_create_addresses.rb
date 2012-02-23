@@ -5,8 +5,8 @@ class CreateAddresses < ActiveRecord::Migration
       t.string :line2
       t.string :line3
       t.string :city
-      t.string :state-province
-      t.string :zip-postal
+      t.string :state_province
+      t.string :zip_postal
 
       t.timestamps
     end

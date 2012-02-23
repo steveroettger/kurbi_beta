@@ -30,11 +30,9 @@
 		text-decoration: none;
 		text-align: center;
 		color: #fff;
+		&:hover { background: url(../images/main-bkgd.png) repeat; }
+		&:active { background: url(../images/main-bkgd.png) repeat; }
 	}
-	
-	a:hover, a:active {
-		background: url(../images/main-bkgd.png) repeat;
-	}	
 }
 
 ul.side-nav-style { background: url(../images/bkgd-btn.gif) repeat;}
@@ -66,14 +64,14 @@ ul.side-nav-style li { border-bottom: 5px solid #fff; }
 	}
 	
 	#about-text p {
-		width: 800px;
+		width: 850px;
 		margin:15px 0 15px 0;
 	}
 	
 	#team_info {
 		margin-top: 2em;
 		font-size: 14px;
-		width: 950px;
+		width: 850px;
 	
 		img {
 			-webkit-border-radius: 5px;
@@ -88,7 +86,7 @@ ul.side-nav-style li { border-bottom: 5px solid #fff; }
 			left: 110px;
 			float: left;
 			margin:0 0 0 0;
-			width: 400px;
+			width: 350px;
 			font-size: 14px;
 			font-style: italic;
 		}
@@ -140,11 +138,21 @@ form {
 		font-weight: lighter;
 	}
 	
-	input.text, input.search, input.file, textarea.textarea, select.select {
+	input.text, input.search, input.file, select.select {
+		font-size: 12px;
+		font-style: italic;
+		color: #333;
+		width: 200px;
+		height: 25px;
+		border: 2px solid #ccc;
+	}
+	
+	textarea.textarea {
 		font-size: 12px;
 		font-style: italic;
 		color: #333;
 		border: 2px solid #ccc;
+		
 	}
 	
 	input.btTxt {
