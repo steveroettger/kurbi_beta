@@ -1,7 +1,7 @@
 class Member < ActiveRecord::Base
-	  has_one :people, :dependent => :destroy
 	  has_many :patient_symptom_search
 	  has_many :user_defined_symptoms
+	  has_one :people, :dependent => :destroy
 	  
 	  	  
 	  attr_accessible :email, :password, :password_confirmation
@@ -37,4 +37,5 @@ class Member < ActiveRecord::Base
 	      self.password_hash = BCrypt::Engine.hash_secret(password, password_salt)
 	    end
 	  end
+	  	
 end

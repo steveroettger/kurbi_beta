@@ -39,7 +39,7 @@ ul.side-nav-style { background: url(../images/bkgd-btn.gif) repeat;}
 ul.side-nav-style li { border-bottom: 5px solid #fff; }
 
 #main-home {
-	margin:55px 0 55px 194px;
+	margin:55px 0 0 194px;
 	width: 838px;
 	min-height: 499px;
 	height: auto;
@@ -145,12 +145,12 @@ ul.side-nav-style li { border-bottom: 5px solid #fff; }
 		
 		#left-profiles {
 			float:left;
-			margin:20px 0 0 0;
+			margin:20px 0 -80px 0;
 		}
 		
 		#right-profiles {
 			float:right;
-			margin:20px 0 0 0;
+			margin:20px 0 -80px 0;
 		}	
 	}
 }
