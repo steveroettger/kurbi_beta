@@ -1,3 +1,3 @@
 class PatientSymptomSearch < ActiveRecord::Base
-	has_many :patients
+	has_many :member
 end

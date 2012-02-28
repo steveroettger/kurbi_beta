@@ -12,9 +12,12 @@ class MembersController < ApplicationController
 	def create
 		@member = Member.new(params[:member])
 		if @member.save
-			redirect_to @member, :notice => "Welcome to Kurbi!"
+			sign_in @member
+			flash[:success] = "Hi there! Welcome to Kurbi!"
+			redirect_to @member 
 		else
-			render "new"
+			@title = "Sign up"
+			render 'new'
 		end
 	end
 	

@@ -4,4 +4,5 @@ class People < ActiveRecord::Base
   has_and_belongs_to_many :predefined_symptoms
   has_and_belongs_to_many :disease_profiles
   has_and_belongs_to_many :roles
+  belongs_to :member
 end

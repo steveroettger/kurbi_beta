@@ -2,7 +2,7 @@
 	<%= link_to logo, root_path %>
 	
 	<nav>
-		<% if current_member %>
+		<% if signed_in? %>
 		    <%= link_to signout_btn, signout_path %>
 		  <% else %>
 		    <%= link_to signin_btn, signin_path %>
