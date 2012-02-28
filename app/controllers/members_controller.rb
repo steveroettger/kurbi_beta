@@ -21,6 +21,22 @@ class MembersController < ApplicationController
 		end
 	end
 	
+	def edit
+		@member = Member.find(params[:id])
+		@title = "Edit Member Settings"
+	end
+	
+	def update
+		@member = Member.find(params[:id])
+		if @member.update_attributes(params[:member])
+			flash[:success] = "Your account settings have been updated."
+			redirect_to @member
+		else 
+			@title = "Edit Member Settings"
+			render 'edit'
+		end
+	end
+	
 	
 end
 
